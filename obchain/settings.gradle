@@ -1,0 +1,9 @@
+rootProject.name = 'obchain'
+include 'framework'
+include 'chainbase'
+include 'protocol'
+include 'actuator'
+include 'consensus'
+include 'common'
+include 'crypto'
+

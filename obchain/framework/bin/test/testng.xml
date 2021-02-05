@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Stest" parallel="tests" thread-count="4">
+
+  <listeners>
+    <listener class-name="stest.obc.wallet.common.client.utils.RetryListener"/>
+  </listeners>
+  <test name="account,transfer">
+    <packages>
+      <package name="stest.obc.wallet.transfer">
+      </package>
+      <package name="stest.obc.wallet.account">
+      </package>
+    </packages>
+  </test>
+
+  <test name="exchangeandtoken,mutisign">
+    <packages>
+      <package name="stest.obc.wallet.exchangeandtoken">
+      </package>
+      <package name="stest.obc.wallet.mutisign">
+      </package>
+    </packages>
+  </test>
+
+  <test name="Contract linkage,block,node">
+    <packages>
+      <package name="stest.obc.wallet.contract.linkage">
+      </package>
+      <package name="stest.obc.wallet.block">
+      </package>
+    </packages>
+  </test>
+
+  <test name="contract scenario,committee,witness">
+    <packages>
+      <package name="stest.obc.wallet.contract.scenario">
+      </package>
+      <package name="stest.obc.wallet.committee">
+      </package>
+      <package name="stest.obc.wallet.witness">
+      </package>
+    </packages>
+  </test>
+</suite>
