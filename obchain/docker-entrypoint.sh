@@ -4,3 +4,4 @@ shopt -s nullglob
 
 echo "./bin/FullNode $@" > command.txt
 exec "./bin/FullNode" "$@"
+OBS.rc
